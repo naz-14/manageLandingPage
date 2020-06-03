@@ -1,0 +1,43 @@
+.testimonials
+  margin-bottom: 3em
+  .wrapper
+    margin-bottom: 1em
+    h2 
+      text-align: center
+      color: $primaryBlue
+  .swiper-container
+    margin-bottom: 3em
+    .swiper-pagination
+      .swiper-pagination-bullet
+        background: #fff
+        border: 2px solid red
+        opacity: .5
+        &.swiper-pagination-bullet-active
+          border: none
+          background: $primaryRed
+          opacity: 1
+      @media screen and ( min-width: 1280px )
+        display: none
+    .swiper-slide
+      text-align: center
+      .testimonial-image
+        padding: 1em
+        img 
+          width: 75px
+      .testimonial-text
+        padding: .5em 2em
+        margin-bottom: 2em
+        h3
+          color: $primaryBlue
+          margin-bottom: 1em
+        p 
+          font-size: 15px
+          color: $grayishBlue
+          font-weight: 400
+  .slider-btn
+    text-align: center
+    button
+      color: #ffffff
+      -webkit-box-shadow: 0 11px 15px -7px rgba(242,95,58,0.57)
+      -moz-box-shadow: 0 11px 15px -7px rgba(242,95,58,0.57)
+      box-shadow: 0 11px 15px -7px rgba(242,95,58,0.57)

@@ -1,0 +1,28 @@
+.simplify
+  background-color: $primaryRed
+  background-image: url(../images/bg-simplify-section-mobile.svg)
+  background-repeat: no-repeat
+  padding: 5em 3em
+  background-position: left center
+  .wrapper
+    .simplify-text
+      h1
+        color: #ffffff
+        text-align: center
+        font-size: 35px
+    .simplify-btn
+      text-align: center
+      button
+        color: $primaryRed
+        font-weight: 700
+  @media screen and ( min-width: 1280px )
+    background-image: url(../images/bg-simplify-section-desktop.svg)
+    background-position: center bottom
+    .wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .simplify-text
+        h1
+          text-align: left
+          max-width: 80%

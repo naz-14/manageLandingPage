@@ -1,0 +1,103 @@
+.site-footer
+  background-color: $darkBlue
+  padding: 3em 0 2em 0
+  .wrapper
+    position: relative
+    .errorContainer
+      display: none
+      p 
+        font-style: italic
+        color: $primaryRed
+      @media screen and ( min-width: 1280px )
+        display: none
+        position: absolute
+        right: 13%
+        bottom: 60%
+    .form-wrapper
+      display: flex
+      justify-content: space-between
+      position: relative
+      form
+        flex-basis: calc(75% - 5px)
+        input[type="email"]
+          width: 100%
+          padding: 1em
+          border-radius: 30px
+          border: none
+          &:focus
+            outline: 0
+          &.error
+            border: 1px solid $primaryRed
+      input[type="submit"]
+        flex-basis: calc( 25% - 5px )
+        color: #ffffff
+        &:focus
+            outline: 0
+    .navs
+      margin-top: 2em
+      display: flex
+      justify-content: space-around
+      .nav-footer
+        ul
+          a 
+            font-weight: 400
+            text-decoration: none
+            color: #ffffff
+            font-size: 14px
+            li
+              list-style: none
+              padding-bottom: .5em
+            &:hover
+              color: $primaryRed
+    .social-wrapper
+      margin-bottom: 2em
+      .social-icons-wrapper
+        margin: 4em 0
+        ul
+          display: flex
+          justify-content: space-between
+          padding: 0 1em
+          li
+            list-style: none
+            a 
+              text-decoration: none
+              .footer-social-image
+                img
+                  width: 35px
+      .logo-wrapper-footer
+        text-align: center
+        img
+          width: 158px
+    .copy
+      text-align: center
+      small
+        color: $grayishBlue
+    @media screen and ( min-width: 1280px )
+      display: grid
+      grid-template-areas: "social navs navs form" "copy copy copy copy"
+
+      //grid-row-gap: 2em
+      .form-wrapper
+        grid-area: form
+        form
+          width: 100%
+        input[type="submit"]
+          height: 35%
+          padding: 0
+          cursor: pointer     
+      .navs
+        grid-area: navs
+        margin: 0
+      .social-wrapper
+        display: flex
+        grid-area: social
+        flex-direction: column-reverse
+        justify-content: space-between
+        margin: 0
+        .social-icons-wrapper
+          margin: 0
+        .logo-wrapper-footer
+          margin: 0
+      .copy
+        margin-top: 4em
+        grid-area: copy

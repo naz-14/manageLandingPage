@@ -1,0 +1,67 @@
+$primaryRed: hsl(12, 88%, 59%)
+$primaryBlue: #2c3254
+$grayishBlue: hsl(227, 12%, 61%)
+$darkBlue: hsl(233, 12%, 13%)
+$paleRed: hsl(13, 100%, 96%)
+$lightGray:  hsl(0, 0%, 98%)
+html 
+  box-sizing: border-box
+  font-size: 16px
+  font-family: 'Be Vietnam', sans-serif
+  
+
+*, *:before, *:after 
+  box-sizing: inherit
+  margin: 0
+  padding: 0
+img
+  max-width: 100%
+p 
+  line-height: 1.9
+body
+  overflow-x: hidden
+.wrapper
+  max-width: 330px
+  margin: 0 auto
+  @media screen and ( min-width: 1280px )
+    max-width: 1110px
+.btn
+  padding: 1em 1.5em
+  border: none
+  border-radius: 20px
+  @media screen and ( min-width: 1280px )
+    padding: 1em 2.5em
+.orange
+  background-color: $primaryRed
+  cursor: pointer
+  &:hover
+    filter: brightness(1.3)
+.withe
+  background-color: #ffffff
+  cursor: pointer
+  &:hover
+    filter: brightness(1.3)
+.background
+  display: block
+  transform: translateX(200%)
+  opacity: 0
+  transition: opacity .3s linear
+  &.active
+    position: fixed
+    top: 10vh
+    left: 0
+    right: 0
+    z-index: 1000
+    display: block
+    width: 100%
+    height: 90vh
+    background: linear-gradient(0deg, rgba(0,0,0,0.835171568627451) 0%, rgba(255,255,255,0) 100%)
+    transform: translateX(0)
+    opacity: 1
+  
+@import layout/_hero
+@import layout/_build
+@import layout/_diff
+@import layout/_testimonials
+@import layout/_simplify
+@import layout/_footer
